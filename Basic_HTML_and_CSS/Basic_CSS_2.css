@@ -1,0 +1,25 @@
+
+/* Styles for the HTML page */
+
+h1 {
+    color: darkblue;
+    text-shadow: 2px 2px 5px green;
+}
+
+h2 {
+    color: darkgreen;
+}
+
+ol {
+    color: darkblue;
+    list-style-type: upper-roman;
+}
+
+ul {
+    color: darkgreen;
+    list-style-type: square;
+}
+
+p {
+    font-size: 18px;
+}
