@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Recipes | Easy Food for Everyone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar" aria-label="Main navigation">
+    <ul class="nav-list">
+      <li><a href="#home">Home</a></li>
+      <li class="dropdown">
+        <a href="#recipes" class="drop-trigger">Recipes</a>
+        <ul class="dropdown-menu">
+          <li><a href="#featured">Featured Recipe</a></li>
+          <li><a href="#pasta">Pasta</a></li>
+          <li><a href="#chicken">Chicken</a></li>
+          <li><a href="#dessert">Dessert</a></li>
+        </ul>
+      </li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header id="home" class="hero">
+    <p class="eyebrow">GOOD FOOD, MADE SIMPLE</p>
+    <h1>Simple Recipes</h1>
+    <p class="hero-subtitle">Everyday ingredients. Delicious moments.</p>
+    <a class="hero-button" href="#recipes">Explore Recipes</a>
+  </header>
+
+  <main>
+    <section id="recipes" class="section recipes-section">
+      <div class="section-heading">
+        <p class="eyebrow">FIND YOUR NEXT FAVORITE</p>
+        <h2>Featured Recipe</h2>
+        <p>Easy-to-follow ideas for your next meal.</p>
+      </div>
+
+      <article id="featured" class="featured-card">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=85" alt="Freshly baked pizza topped with cheese and tomato">
+        <div class="featured-content">
+          <span class="recipe-tag">READER FAVORITE</span>
+          <h3>Deep Dish Skillet Pizza</h3>
+          <p>A cozy, cheesy favorite with a crisp crust and simple toppings. Perfect for sharing with family and friends.</p>
+          <div class="recipe-details">
+            <span><strong>Prep:</strong> 20 min</span>
+            <span><strong>Cook:</strong> 35 min</span>
+            <span><strong>Level:</strong> Medium</span>
+          </div>
+          <a class="text-link" href="#contact">Get in touch for the recipe →</a>
+        </div>
+      </article>
+
+      <div class="recipe-grid">
+        <article id="pasta" class="recipe-card">
+          <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=80" alt="Pasta dish">
+          <div class="recipe-card-content">
+            <p class="recipe-tag">PASTA</p>
+            <h3>Garden Herb Pasta</h3>
+            <p>A fresh and comforting pasta dish with herbs and seasonal ingredients.</p>
+          </div>
+        </article>
+        <article id="chicken" class="recipe-card">
+          <img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=900&q=80" alt="Roasted chicken with vegetables">
+          <div class="recipe-card-content">
+            <p class="recipe-tag">DINNER</p>
+            <h3>Roasted Chicken</h3>
+            <p>A simple, hearty dinner made with pantry spices and colorful vegetables.</p>
+          </div>
+        </article>
+        <article id="dessert" class="recipe-card">
+          <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=900&q=80" alt="Sweet dessert cupcakes">
+          <div class="recipe-card-content">
+            <p class="recipe-tag">DESSERT</p>
+            <h3>Sweet Little Treats</h3>
+            <p>Finish your meal with an easy dessert that feels a little special.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="about-panel">
+        <p class="eyebrow">OUR STORY</p>
+        <h2>About Us</h2>
+        <div class="about-copy">
+          <p>Simple Recipes is your destination for easy-to-follow recipes that make cooking enjoyable for everyone, whether you are a seasoned cook or just starting out. Our mission is to inspire you to create delicious meals with everyday ingredients and simple techniques.</p>
+          <p>From comforting classics to flavors inspired by cuisines around the world, we share practical ideas, clear instructions, and helpful tips to make cooking feel less complicated. We believe good food brings people together, and we are happy to have you in our kitchen community.</p>
+          <p>Choose a recipe, gather your ingredients, and let’s cook up something wonderful!</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="section-heading">
+        <p class="eyebrow">WE WOULD LOVE TO HEAR FROM YOU</p>
+        <h2>Contact Us</h2>
+        <p>Have a question or a recipe idea? Send us a message.</p>
+      </div>
+      <form class="contact-form" action="#" method="get">
+        <div class="form-row">
+          <label>First name<input type="text" name="first-name" placeholder="First name"></label>
+          <label>Last name<input type="text" name="last-name" placeholder="Last name"></label>
+        </div>
+        <div class="form-row">
+          <label>Email address<input type="email" name="email" placeholder="you@example.com"></label>
+          <label>Phone number<input type="tel" name="phone" placeholder="Optional"></label>
+        </div>
+        <label class="subscribe"><input type="checkbox" name="subscribe"> Subscribe for weekly recipes</label>
+        <label>Message<textarea name="message" rows="5" placeholder="Type your message here..."></textarea></label>
+        <button type="submit" class="submit-button">Send Message</button>
+        <p class="form-note">This demonstration form does not send messages to a server.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-brand">Simple Recipes ©</p>
+    <p>Made with care for home cooks everywhere.</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+</body>
+</html>
